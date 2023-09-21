@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  background-color: #333333;
+}
+.logo {
+  margin-left: 50px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.input {
+  border-radius: 30px;
+  width: 450px;
+  height: 35px;
+  border: 1px solid red;
+  transition: border-color 0.3s ease;
+}
+.input::placeholder {
+  padding: 20px;
+}
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+.input:focus {
+  border: 1px solid black;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: red;
+}
+
+.button {
+  position: relative;
+  width: 90px;
+  height: 30px;
+  background: linear-gradient(to right, red 50%, black 50%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.menu {
+  height: 350px;
+  width: 50px;
+  background-color: #555555;
+  border-radius: 30px;
+  margin-left: 45px;
+  margin-top: 100px;
+  overflow: auto;
+  position: absolute;
+  z-index: 1;
+  border-left: 2px solid red;
+}
+.menu-icon {
+  color: white;
+  font-size: 20px;
+}
+
+.main-layout {
+  /* Đặt chiều cao của toàn bộ layout */
+  height: 100vh;
+  display: flex;
+  position: relative; /* Đặt vị trí tương đối để sử dụng z-index */
+}
+
+.content-layout {
+  /* Đặt thuộc tính flex cho phần nội dung */
+  flex: 1;
+  overflow: auto;
+}
+.image-container {
+  position: relative; /* Để chứa cả hình ảnh và văn bản */
+}
+
+.banner-card {
+  height: 550px;
+  width: 1000px;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-size: cover;
+  overflow-y: auto;
+  margin-left: -25px;
+}
+.card-content {
+  margin-top: 100px;
+  padding-left: 10px;
+  color: white;
+}
+.card-content h3 {
+  font-size: 50px;
+}
+
+.poster {
+  width: 250px;
+  height: 400px;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-size: cover;
+  margin: auto;
+}
+.text {
+  margin-top: 260px;
+}
+
+.form-container {
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Để căn giữa theo chiều cao của màn hình */
+}
